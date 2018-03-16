@@ -9,7 +9,7 @@ var lengthOfLongestSubstring = function(s) {
         if (list[arr[i]] != undefined && list[arr[i]] >= left) {
             left = list[arr[i]] + 1;
         }
-        list[s[i]] = i;
+        list[arr[i]] = i;
         ret = Math.max(ret, i - left + 1);
     }
     return ret;
